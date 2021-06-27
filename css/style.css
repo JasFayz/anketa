@@ -81,6 +81,10 @@ body {
     text-align: center;
     font-size: 24px;
 }
+.info-fields .form-control:focus{
+    border-color: #435993;
+    box-shadow: none;
+}
 .info-fields .form-control::placeholder {
     color: #c8c8c8;
     font-size: 24px;
@@ -256,7 +260,7 @@ body {
     height: 100%;
     top: 0;
     left: 0;
-    background: linear-gradient(to right, #ccb1f1, #8986c3);
+    background: linear-gradient(to right, #ccb1f1, #445993);
     transition: all 0.3s linear;
 }
 .range_track_wrapper {
