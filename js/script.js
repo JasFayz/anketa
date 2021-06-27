@@ -110,12 +110,15 @@ $(document).ready(function () {
         }
         $('#birthday').append(`<option>${i}</option>`)
     }
-
+    $('#birthday').niceSelect()
     $("#birthday").change(function () {
         if($(this).val() == "0") $(this).addClass("empty");
         else $(this).removeClass("empty")
     });
     $("#birthday").change();
     
+
+
+   
 })
 
