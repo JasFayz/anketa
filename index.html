@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Анкета</title>
+  <link rel="stylesheet" href="./css/bootstrap.min.css">
+  <link rel="stylesheet" href="./fonts/fonts.css">
+  <link rel="stylesheet" href="./css/style.css">
+  <link rel="stylesheet" href="./css/media.css">
+</head>
+
+<body>
+
+  <div class="app">
+   <form action="">
+    <div class="header">
+      <div class="container navbar-expand-md container__small">
+        <div class="navbar navbar-light ">
+          <div class="navbar-logo">Личная информация</div>
+          <button class="navbar-toggler" type="button">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <ul class="nav">
+            <li class="nav-item">
+              <a href="#experiense" class="nav-link">
+                Опыт
+              </a>
+            </li>
+            <li class="nav-item">
+              <a href="#js_level" class="nav-link">
+                JavaScript
+              </a>
+            </li>
+            <li class="nav-item">
+              <a href="#about" class="nav-link">
+                О себе
+              </a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+    <h1 class="title text-center">Анкета</h1>
+    <div class="section info">
+      <div class="container container__small">
+        <div class="section_img">
+          <img src="./img/icon.png" alt="">
+        </div>
+        <div class="section_title">
+          Личная информация
+        </div>
+        <div class="info-fields">
+          <div class="form-group">
+            <input type="text" class="form-control" placeholder="ФИО" value="Ахматфаезов Жасур">
+          </div>
+          <div class="form-group select">
+            <select name="" id="birthday" class="form-control">
+              <option value="0" selected="selected">Год рождения</option>
+            </select>
+          </div>
+          <div class="form-group">
+            <input type="text" class="form-control" placeholder="Место проживания" value="Ташкент">
+          </div>
+          <div class="form-group">
+            <input type="text" class="form-control" placeholder="Skype">
+          </div>
+          <div class="form-group">
+            <input type="text" class="form-control" placeholder="E-mail" value="jasfayz@gmail.com">
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="section experiense" id="experiense">
+      <div class="section_img">
+        <img src="./img/experience_img.png" alt="">
+      </div>
+      <div class="section_title">
+        Расскажите о своем опыте
+      </div>
+      <div class="experiense_checkbox">
+        <div class="container ">
+          <div class="row justify-content-center">
+            <div class="col-lg-4 col-md-4 col-sm-4 col-12">
+              <div class="form-group">
+                <input type="checkbox" class="form-checkbox" id="bem">
+                <label for="bem" class="form-checkbox-label">БЭМ/OOCSS </label>
+              </div>
+              <div class="form-group">
+                <input type="checkbox" class="form-checkbox" id="sass" checked>
+                <label for="sass" class="form-checkbox-label">Stylus/LESS/SASS </label>
+              </div>
+              <div class="form-group">
+                <input type="checkbox" class="form-checkbox" id="svg">
+                <label for="svg" class="form-checkbox-label">Работаю с SVG </label>
+              </div>
+            </div>
+            <div class="col-lg-4 col-md-4 col-sm-4 col-12">
+              <div class="form-group">
+                <input type="checkbox" class="form-checkbox" id="semantic" checked>
+                <label for="semantic" class="form-checkbox-label">Верстаю семантично </label>
+              </div>
+              <div class="form-group">
+                <input type="checkbox" class="form-checkbox" id="escript" checked>
+                <label for="escript" class="form-checkbox-label">ES2015/ES2016 </label>
+              </div>
+              <div class="form-group">
+                <input type="checkbox" class="form-checkbox" id="gulp">
+                <label for="gulp" class="form-checkbox-label">Gulp/GRUNT </label>
+              </div>
+            </div>
+            <div class="col-lg-4 col-md-4 col-sm-4 col-12">
+              <div class="form-group">
+                <input type="checkbox" class="form-checkbox" id="Webpack">
+                <label for="Webpack" class="form-checkbox-label">Webpack </label>
+              </div>
+              <div class="form-group">
+                <input type="checkbox" class="form-checkbox" id="jQuery" checked>
+                <label for="jQuery" class="form-checkbox-label">jQuery </label>
+              </div>
+              <div class="form-group">
+                <input type="checkbox" class="form-checkbox" id="Git" checked>
+                <label for="Git" class="form-checkbox-label">Ипользую Git </label>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="section js_level" id="js_level">
+      <div class="section_img">
+        <img src="./img/js_img.png" alt="">
+      </div>
+      <div class="section_title">
+        Уровень владения JavaScript
+      </div>
+      <div class="js_level_slider">
+        <div class="container">
+          <ul class="js_level_slider-labels">
+            <li>Не владею</li>
+            <li>Использую готовые
+              решения</li>
+            <li>Использую готовые решения
+              и умею и переделывать</li>
+            <li>
+              Пишу сложный JS с нуля
+            </li>
+          </ul>
+          <div class="range_track_wrapper">
+            <div class="range_track">
+              <span class="thumbnail"></span>
+            </div>
+            <span class="selected_point"></span>
+            <input type="range" class="custom-range" value="2" min="0" max="4" id="js_level_slider">
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="about" id="about">
+      <div class="section_img">
+        <img src="./img/about_img.png" alt="">
+      </div>
+      <div class="section_title">
+        Расскажите о себе
+      </div>
+      <div class="container container__small">
+        <div class="section_subtitle">
+          Напишите несколько предложений, чем привлекла наша вакансия
+          и что вы ожидаете от работы у нас.
+
+        </div>
+      </div>
+      <div class="container container__small">
+        <textarea class="form-control" placeholder="Понравилась тем, что...">Понравился график работы
+        </textarea>
+
+        <div class="form-group text-center">
+          <button class="btn">Готово</button>
+        </div>
+      </div>
+    </div>
+   </form>
+  </div>
+
+  <script src="./js/jquery-3.6.0.min.js"></script>
+  <script src="./js/bootstrap.bundle.min.js"></script>
+  <script src="./js/script.js"></script>
+</body>
+
+</html>

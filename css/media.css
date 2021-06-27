@@ -1,0 +1,30 @@
+@media (min-width: 768px) {
+    .container {
+        max-width: 770px;
+        width: 100%;
+    }
+    .container__small {
+        padding: 0 122px;
+    }
+}
+@media (max-width: 768px) {
+    .header .nav {
+        display: flex;
+        height: 0;
+        opacity: 0;
+        overflow: hidden;
+        justify-content: center;
+    }
+    .header .nav.show {
+        opacity: 1;
+        height: 38px;
+    }
+    .info-fields .select {
+        padding: 0;
+    }
+}
+@media (max-width: 556px) {
+    .header .nav-item {
+        margin: 0;
+    }
+}
